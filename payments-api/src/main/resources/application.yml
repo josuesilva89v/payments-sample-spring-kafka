@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: payments-api
+  datasource:
+    drive-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/payments_db
+    username: user1
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+  kafka:
+    bootstrap-servers: localhost:29092
+    group-id: payment-sample
+
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    mx.altum.jsilva.payments: TRACE
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"

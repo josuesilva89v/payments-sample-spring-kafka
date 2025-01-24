@@ -1,0 +1,14 @@
+mx.altum.jsilva.payments.api
+mx.altum.jsilva.payments.api.config
+mx.altum.jsilva.payments.api.constants
+mx.altum.jsilva.payments.api.controller
+mx.altum.jsilva.payments.api.model
+mx.altum.jsilva.payments.api.service.impl
+mx.altum.jsilva.payments.core
+mx.altum.jsilva.payments.core.config
+mx.altum.jsilva.payments.core.constants
+mx.altum.jsilva.payments.core.listener
+mx.altum.jsilva.payments.core.service
+mx.altum.jsilva.payments.data.model
+mx.altum.jsilva.payments.data.repository
+mx.altum.jsilva.payments.service

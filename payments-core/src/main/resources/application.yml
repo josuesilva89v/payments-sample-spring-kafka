@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: payments-core
+  datasource:
+    drive-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/payments_db
+    username: user1
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+  kafka:
+    bootstrap-servers: localhost:29092
+    group-id: payment-sample
+
