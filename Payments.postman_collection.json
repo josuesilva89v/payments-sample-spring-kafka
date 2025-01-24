@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "6fd1e1af-3af0-40aa-b717-6a7fdcaf6ac3",
+		"name": "Payments",
+		"description": "En este documento se encuentran las llamadas al servicio desde postman, desde las consultas simples hasta registro y modificación de datos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2086731"
+	},
+	"item": [
+		{
+			"name": "Consulta de pagos realizados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/payments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta de un pago",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/payments/find/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"payments",
+						"find",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta de Lista de Estatus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/payments/list/status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"payments",
+						"list",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registro de nuevo pago",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"concept\": \"Consumo desde postman\",\r\n    \"quantify\": 99,\r\n    \"payer\": \"Postman\",\r\n    \"payee\": \"spring\",\r\n    \"amount\": 582.01,\r\n    \"status\": \"PENDING\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/payments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificación de estatus",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
