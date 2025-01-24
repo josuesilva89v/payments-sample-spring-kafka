@@ -51,7 +51,7 @@ out/
 #docker-compose.yml
 .dockerignore
 docker-compose.override.yml
-/docker-compose.*
+#/docker-compose.*
 
 # Spring Boot
 *.war
